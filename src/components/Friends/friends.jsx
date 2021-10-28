@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import s from './friends.module.scss'
+import s from './Friends.module.scss'
 
 const FriendsList = ({ friends }) => (
     <ul className={s.friendsInfo}>

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import s from './profile.module.scss'
+import s from './Profile.module.scss'
 const UserProfile = ({ name, tag, location, avatar, stats }) => (
     <div className={s.profile}>
         <div className={s.about}>

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import s from './statistic.module.scss'
+import s from './Statistic.module.scss'
 import colorGenerator from '../../colorGenerator.js'
 
 const Statistic = ({ title, stats }) => (
