@@ -6,12 +6,9 @@ const FriendsList = ({ friends }) => (
     <ul className={s.friendsInfo}>
         {friends.map((friend) => {
             let isOnline = 'onLine'
-            if (!friend.isOnline) {
-                isOnline = 'offLine'
-            }
             return (
                <li className={s.item} key={friend.id}>
-        <span className={s[isOnline]}></span>
+        <span className={isOnline? s['onLine']: s['offLine']}></span>
         <div className={s.friend_wrapper}>
             <img className={s.avatar} src={friend.avatar} alt={friend.name} width="48" />
             <p className={s.name}>{friend.name}</p>
